@@ -12,14 +12,15 @@ function Form() {
     return (
         <Box component="form"
             sx={{
-                width: 400,
+                width: 450,
                 height: 400,
                 backgroundColor: 'white',
             }}
             noValidate
             autoComplete="off"
-            color="#FF0000"
+            
         >
+            <h2>Agregar un peronaje</h2>
             <div>
                 <div>
                     <TextField
@@ -72,7 +73,7 @@ function Form() {
                 </div>
                 <br/>
                 <div>
-                    <Button variant="contained">Contained</Button>
+                    <Button variant="contained">GUARDAR</Button>
                 </div>
             </div>
         </Box>

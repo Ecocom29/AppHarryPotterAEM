@@ -4,11 +4,7 @@ import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
-import PlayArrowIcon from '@mui/icons-material/PlayArrow';
-import SkipNextIcon from '@mui/icons-material/SkipNext';
 
 
 function ItemCard() {
@@ -18,20 +14,29 @@ function ItemCard() {
             <Card sx={{ display: 'flex' }}>
                 <CardMedia
                     component="img"
-                    sx={{ width: 151 }}
-                    image="../Image/avatar.png"
-                    alt="Live from space album cover"
+                    sx={{ width: 100, border:10, borderBlockColor: "#3FCB08" }}
+                    image="https://www.jotdown.es/wp-content/uploads/2021/02/harry-potter1.jpg"
+                    alt="album cover human"
                 />
                 <Box sx={{ display: 'flex', flexDirection: 'column' }}>
                     <CardContent sx={{ flex: '1 0 auto' }}>
                         <Typography component="div" variant="h5">
-                            Live From Space
+                            Draco Malfoy
                         </Typography>
-                        <Typography variant="subtitle1" color="text.secondary" component="div">
-                            Mac Miller
+                        <Typography variant="subtitle3"  color="text.secondary" component="div">
+                            Cumpleaños: 31-07-1980
+                        </Typography>
+                        <Typography variant="subtitle3"  color="text.secondary" component="div">
+                            Genero: Male
+                        </Typography>
+                        <Typography variant="subtitle3"  color="text.secondary" component="div">
+                            Color de ojos: Verdes
+                        </Typography>
+                        <Typography variant="subtitle3"  color="text.secondary" component="div">
+                            Color de pelo: Dorado
                         </Typography>
                     </CardContent>
-                    <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1 }}>
+                   {/*  <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1 }}>
                         <IconButton aria-label="previous">
                             {theme.direction === 'rtl' ? <SkipNextIcon /> : <SkipPreviousIcon />}
                         </IconButton>
@@ -41,7 +46,7 @@ function ItemCard() {
                         <IconButton aria-label="next">
                             {theme.direction === 'rtl' ? <SkipPreviousIcon /> : <SkipNextIcon />}
                         </IconButton>
-                    </Box>
+                    </Box> */}
                 </Box>
 
             </Card>
