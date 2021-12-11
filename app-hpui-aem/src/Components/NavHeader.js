@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Form from './Form';
 import Modal from '@mui/material/Modal';
+import Grid from '@mui/material/Grid';
 
 
 function NavHeader() {
@@ -17,23 +18,36 @@ function NavHeader() {
 
     return (
         <>
-            <nav className="navSection">
-                <div class="header">
-                    <a class="active" href="#home" onClick={HandleOpen}>Favoritos</a>
-                    <a class="active" href="#home">Agregar</a>
+            <Grid display="grid" spacing={4} columns={4} justifyContent="flex-end">
+                <div>
+                    <nav className="navSection">
+                        <div class="header">
+
+                            <a class="active" href="#home" onClick={HandleOpen}>Favoritos</a>
+
+                            <a class="active" href="#home">Agregar</a>
+
+                        </div>
+                    </nav>
                 </div>
-            </nav>
+            </Grid>
+
             <Modal
-               aria-labelledby="transition-modal-title"
-               aria-describedby="transition-modal-description"
-               open={open}
-               onClose={handleClose}
-               closeAfterTransition
-               BackdropProps={{
-                 timeout: 500,
-               }}
+                aria-labelledby="transition-modal-title"
+                aria-describedby="transition-modal-description"
+                open={open}
+                onClose={handleClose}
+                closeAfterTransition
+                aria-labelledby="server-modal-title"
+                aria-describedby="server-modal-description"
+                sx={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                }}
+
             >
-                 <Form />
+                <Form />
             </Modal>
         </>
     )

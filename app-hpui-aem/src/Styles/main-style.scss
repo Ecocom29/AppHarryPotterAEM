@@ -1,27 +1,26 @@
-.bodyContent{
+/* .bodyContent{
   background-color:#000000;
-  background-image:url('./../Image/background-harry-potter.jpg');
+  //background-image:url('./../Image/background-harry-potter.jpg');
   
   background-repeat:no-repeat;
   background-position-x:center;
   background-position-y:center;
-}
+} */
 
 .navSection {
   background-color:#8350AB;
-
   height: auto;
   float : right;
   text-align : center;
   width : 180px;
-  //font-family : Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size : 18px;
   font-weight: bold;  
   margin-bottom : 150px;
   margin-top : -8px;
-  //border-top : 1px solid #f2f2f2;
   padding-top : 100;
   padding-bottom : 30px;
+  border-end-end-radius: 10px;
+  border-end-start-radius: 10px;
 }
 
 .buttonSection {
@@ -32,4 +31,9 @@
 
 .cardSection{
   color: rgb(255, 255, 255);
+}
+
+.txtTitulo{
+  font-size: 14;
+  color: aliceblue;
 }
