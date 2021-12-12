@@ -1,10 +1,11 @@
 import React from 'react';
 
 
-const Mensaje = () => {
+const Mensaje = ({msg}) => {
+   
     return (
-        <div>
-            <h2>Mensaje</h2>
+        <div className="mensajeError">
+            <h2>{`Error: ${msg.status} ${msg.statusText}`}</h2>
         </div>
     )
 }

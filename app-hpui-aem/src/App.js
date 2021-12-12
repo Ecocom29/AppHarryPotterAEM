@@ -1,5 +1,5 @@
 //import './index.scss';
-import Content from '../src/Components/Content';
+import Content from '../src/Components/Content/Content';
 
 function App() {
   return (

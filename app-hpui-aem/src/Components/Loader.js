@@ -1,10 +1,12 @@
 import React from 'react';
-
+import './../Styles/loading-style.scss';
 
 const Loader = () => {
     return (
-        <div>
-            <h2>Loader</h2>
+        <div class="lds-facebook">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
     )
 }
