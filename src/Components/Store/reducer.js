@@ -5,17 +5,17 @@ export const initialState = {
         id: 0,
         name: "",
         species: "",
-        gender: "" ,
+        gender: "",
         house: "",
         dateOfBirth: "",
         yearOfBirth: "",
-        ancestry:"",
+        ancestry: "",
         eyeColour: "",
         hairColour: "",
         wand: {
-          wood: "",
-          core: "",
-          length: ""
+            wood: "",
+            core: "",
+            length: ""
         },
         patronus: "",
         hogwartsStudent: false,
@@ -23,15 +23,15 @@ export const initialState = {
         actor: "",
         alive: false,
         image: ""
-      }],
-    listFav: []   ,
+    }],
+    listFav: [],
     modalType: null
 };
 
-export function admReducers(state= initialState, action){
-    
+export function admReducers(state = initialState, action) {
+
     switch (action.type) {
-        case TYPES.ADD_ITEM_FAVORITE: {
+        case TYPES.ADD_ITEM_FAVORITE:
 
             let newItem = state.listFavoritos.find(
                 (item) => item.id === action.payload
@@ -52,8 +52,9 @@ export function admReducers(state= initialState, action){
                     ...state,
                     listFav: [...state.listFav, { ...newItem, quantity: 1 }],
                 };
-        }
-        case TYPES.REMOVE_ITEM_FAVORITE: {
+
+            break;
+        case TYPES.REMOVE_ITEM_FAVORITE:
             let itemDeleteFav = state.listFav.find((item) => item.id === action.payload);
 
             return itemDeleteFav.quantity > 1
@@ -69,13 +70,12 @@ export function admReducers(state= initialState, action){
                     ...state,
                     listFav: state.listFav.filter((item) => item.id !== action.payload),
                 };
-        }
-        case TYPES.SHOW_MODAL: {
 
-        }
-        case TYPES.HIDE_MODAL: {
-
-        }
+            break;
+        case TYPES.SHOW_MODAL:
+            break;
+        case TYPES.HIDE_MODAL:
+            break;
         default:
             return state;
     }
