@@ -8,7 +8,7 @@
 
 ## 4.- Para iniciar el JSON Server, ejecutar el comando `npm run api-backend`
 
-## 5.- La aplicación tiene un tomeout, por ello es necesario esperar un momento mientras carga la información del JSON. 
+## 5.- La aplicación tiene un setInterval(), por ello es necesario esperar un momento mientras carga la información del JSON, esto es debido a que no se tiene una base de datos real para que las peticiones sean automáticas. 
 
 ## 6.- En la aplicación se puede ejecutar los filtros y agregar registros. 
 
