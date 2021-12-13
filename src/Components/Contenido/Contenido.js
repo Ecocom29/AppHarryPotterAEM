@@ -59,7 +59,7 @@ function Content() {
     useEffect(() => {
         setLoading(true);
         setInterval(() => {
-            /*helperHttp().get(url).then(res => {
+            helperHttp().get(url).then(res => {
 
                 if (!res.err) {
                     setDB(res);
@@ -70,8 +70,8 @@ function Content() {
                     setError(res);
                 }
                 setLoading(false);
-            })*/
-          }, 100000);
+            })
+          }, 10000);
     }, []);
 
     const filtrarLista =(filtro)=>{
