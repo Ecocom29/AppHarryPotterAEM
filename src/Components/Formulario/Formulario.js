@@ -47,6 +47,8 @@ function Formulario() {
     const [loading, setLoading] = useState(null);
     const theme = createTheme();
     let api = helperHttp();
+
+    //USAR URL PARA PRUEBAS EN AMBIENTE LOCAL
     let url = "http://localhost:5000/harrypotter";
 
     const handleSubmit = (event) => {
@@ -72,19 +74,21 @@ function Formulario() {
             image: formData.get('txtFotografia')
         }
 
-
         let options = {
             body: objData,
             headers: { "content-type": "application/json" }
         };
 
-        api.post(url, options).then((res) => {
+        //PARA LA PUESTAS EN AMBIENTE LOCAL DESCOMENTAR ESTA SECCIÓN
+        /* api.post(url, options).then((res) => {
             if (!res.err) {
                 setDB([...db, res]);
             } else {
                 setError(res);
             }
-        });
+        }); */
+
+        alert("No es posible guardar los datos por el momento.")
     };
 
     const closeModal = () =>{

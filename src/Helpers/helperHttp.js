@@ -34,7 +34,7 @@ export const helperHttp = () => {
     const get = (url, options = {}) => customFetch(url, options);
 
     const post = (url, options = {}) => {
-        console.log("OPCTIONS", options);
+        console.log("options", options);
 
         options.method = "POST";
         return customFetch(url, options);

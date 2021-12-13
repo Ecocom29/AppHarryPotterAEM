@@ -11,8 +11,8 @@ import { helperHttp } from '../../Helpers/helperHttp';
 import Loader from '../Layout/Loader';
 import Mensaje from '../Layout/Mensaje';
 import ItemCard from '../Cards/ItemCard'
-import { formLabelClasses, useMediaQuery } from '@mui/material';
 import lghp_bg from './../../Image/lghp_bg.png';
+import { listaDatos } from './../../Api/ListaPrueba';
 
 const BootstrapButton = styled(Button)({
     fontWeight: "lighter",
@@ -54,23 +54,34 @@ function Content() {
     const [loading, setLoading] = useState(null);
 
     let api = helperHttp();
-    let url = "https://app-hp-aem.herokuapp.com/harrypotter";
+    let url = "http://localhost:5000/harrypotter";
 
     useEffect(() => {
-        setLoading(true);
-        setInterval(() => {
-            helperHttp().get(url).then(res => {
+        
 
-                if (!res.err) {
-                    setDB(res);
-                    setError(null)
-                } else {
-                    console.log(res)
-                    setDB(null);
-                    setError(res);
+       
+        setLoading(true);
+            setInterval(() => {
+                //SECCIÓN DE PRUEBAS
+                if(listaDatos.length > 0){
+                    setDB(listaDatos);
+                    setLoading(false);                
                 }
-                setLoading(false);
-            })
+                //PARA EJECUTAR EN LOCAL, DESCOMENTAR ESTA 
+                //SECCIÓN Y COMENTAR LA SECCIÓN DE PRUEBAS
+                
+                /* helperHttp().get(url).then(res => {
+
+                    if (!res.err) {
+                        setDB(res);
+                        setError(null)
+                    } else {
+                        console.log(res)
+                        setDB(null);
+                        setError(res);
+                    }
+                    setLoading(false);
+                }) */
         }, 10000);
     }, []);
 
