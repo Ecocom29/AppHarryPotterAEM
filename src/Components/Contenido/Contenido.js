@@ -123,7 +123,7 @@ function Content() {
                             {error && <Mensaje msg={error} bgColor="#dc3545" />}
                             {db ? (<ItemCard data={db} />) : (<Stack Item xs={12} >
                                 <div className="txtTitulo">
-                                    <h2>Selecciona tu filtro</h2>
+                                    <h2>No existen datos-</h2>
                                 </div>
                             </Stack>)}
                         </Grid >
