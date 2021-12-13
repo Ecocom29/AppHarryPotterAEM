@@ -54,7 +54,7 @@ function Content() {
     const [loading, setLoading] = useState(null);
 
     let api = helperHttp();
-    let url = "http://localhost:5000/harrypotter";
+    let url = "https://app-hp-aem.herokuapp.com/harrypotter";
 
     useEffect(() => {
         setLoading(true);
