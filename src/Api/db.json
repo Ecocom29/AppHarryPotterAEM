@@ -155,6 +155,24 @@
       "actor": "",
       "alive": true,
       "image": "http://3.bp.blogspot.com/-wXBJMfNF7WA/TXQiArg6BXI/AAAAAAAADnA/0vPpcblS3Yo/s1600/Buck1.jpg"
+    },
+    {
+      "id": 1639377247682,
+      "name": "PRUEBA",
+      "species": "Staff",
+      "gender": "Hombre",
+      "house": "",
+      "dateOfBirth": "13/12/2021",
+      "yearOfBirth": "",
+      "ancestry": "",
+      "eyeColour": "NEGROS",
+      "hairColour": "CAFE",
+      "patronus": "",
+      "hogwartsStudent": "",
+      "hogwartsStaff": "",
+      "actor": "",
+      "alive": true,
+      "image": "https://pottertar.framiq.com/assets/examples/pottertar03.png"
     }
   ]
 }
