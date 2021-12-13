@@ -30,7 +30,7 @@ function ItemCard({ data }) {
     return (
         <>
             {
-                data.map(item => {
+               data.map(item => {
                     return (
                         <Grid item xs={2} sm={4} md={4} key={item.id} sx={ { maxWidth:'xl'}}>
 

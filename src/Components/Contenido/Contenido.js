@@ -71,15 +71,15 @@ function Content() {
                 }
                 setLoading(false);
             })
-          }, 10000);
+        }, 10000);
     }, []);
 
-    const filtrarLista =(filtro)=>{
-     
+    const filtrarLista = (filtro) => {
+
         let listFilter = db.filter(item => item.hogwartsStaff == filtro);
-        
+
         console.log(listFilter);
-        
+
         setDB(listFilter)
     }
 
@@ -87,7 +87,7 @@ function Content() {
         <div className="bodyContent">
             <Container   >
                 <NavHeader />
-                
+
                 <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <Stack Item xs={12} >
                         <div >
@@ -99,12 +99,12 @@ function Content() {
                             <h2>Selecciona tu filtro</h2>
                         </div>
                     </Stack>
-                    <Stack direction="row" spacing={2} sx={{maxWidth: 'xl'}} >
-                        <BootstrapButton variant="contained" disableRipple onClick={()=>filtrarLista(false)}>
+                    <Stack direction="row" spacing={2} sx={{ maxWidth: 'xl' }} >
+                        <BootstrapButton variant="contained" disableRipple onClick={() => filtrarLista(false)}>
 
                             ESTUDIANTES
                         </BootstrapButton>
-                        <BootstrapButton variant="contained" disableRipple onClick={()=>filtrarLista(true)}>
+                        <BootstrapButton variant="contained" disableRipple onClick={() => filtrarLista(true)}>
                             STAFF
                         </BootstrapButton>
 
@@ -117,11 +117,15 @@ function Content() {
                     </Stack>
                 </Box>
                 <div className="divContainer">
-                    <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center'  }}>
+                    <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                         <Grid container spacing={6} columns={{ xs: 12, md: 9 }} >
                             {loading && <Loader />}
                             {error && <Mensaje msg={error} bgColor="#dc3545" />}
-                            {db && (<ItemCard data={db} />)}
+                            {db ? (<ItemCard data={db} />) : (<Stack Item xs={12} >
+                                <div className="txtTitulo">
+                                    <h2>Selecciona tu filtro</h2>
+                                </div>
+                            </Stack>)}
                         </Grid >
                     </Box>
                 </div>
