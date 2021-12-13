@@ -88,7 +88,7 @@ function Formulario() {
     };
 
     const closeModal = () =>{
-        alert("Cerrando modal...")
+        
     }
 
     return (
@@ -209,6 +209,7 @@ function Formulario() {
                             }}
                             variant="filled"
                             sx={{ m: 1, width: '60ch' }}
+                            helperText="Agregar el link de la imagen."
                         />
                     </Grid>
                 </Grid>
