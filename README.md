@@ -24,11 +24,11 @@ Para el deploy de la aplicación, se implemento Heroku, debido a que en mi ambie
 
 De igual manera comparto el link de la aplicación: https://app-hp-aem.herokuapp.com/
 
-###  ¿Qué es lo que más te gustó de tu desarrollo?
+##  ¿Qué es lo que más te gustó de tu desarrollo?
 
 Me gusto el haber realizado este pequeño proyecto, ya que con ello puedo saber que nivel de conocimientos tengo hasta el momento, estuvo muy entretenido y fue un reto el haber implementado la aplicación en pocos días. 
 
-### Si hubieras tenido más tiempo ¿qué hubieras mejorado o qué más hubieras hecho?
+## Si hubieras tenido más tiempo ¿qué hubieras mejorado o qué más hubieras hecho?
 
 Describo las mejoras que podría aplicar, en este caso literalmente fue por tiempo:
 
