@@ -20,11 +20,11 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start ",
-    "build": "react-scripts build",
+    "start": "react-scripts start",
+    "build": "react-scripts build json-server --watch src/Api/db.json",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "api-backend": "json-server --watch src/Api/db.json --port 5000"
+    "api-backend": "json-server --watch src/Api/db.json --port 8080"
   },
   "eslintConfig": {
     "extends": [
