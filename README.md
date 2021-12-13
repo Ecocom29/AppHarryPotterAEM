@@ -22,7 +22,7 @@ Nota: debido a que no se implemento un servidor y una base de datos real, es nec
 # Instrucciones para inicializar el proyecto en ambiente publicado
 Para el deploy de la aplicación, se implemento Heroku, debido a que en mi ambiente de desarrollo ya lo tengo preparado para ejecutar los deploy en la herramienta. 
 
-De igual manera comparto el link de la aplicación:   [https://app-hp-aem.herokuapp.com]
+De igual manera comparto el link de la aplicación: https://app-hp-aem.herokuapp.com/
 
 ##  ¿Qué es lo que más te gustó de tu desarrollo?
 
