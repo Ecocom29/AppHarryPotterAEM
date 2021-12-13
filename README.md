@@ -2,11 +2,11 @@
 
 ## 1.- Cargar el proyecto a un editor de código
 
-## 2.- Instalar todas las dependencias con el comando ### `npm install`
+## 2.- Instalar todas las dependencias con el comando `npm install`
 
-## 3.- Al termino de la instalación ejecutar el comando ### `npm start`
+## 3.- Al termino de la instalación ejecutar el comando `npm start`
 
-## 4.- Para iniciar el JSON Server, ejecutar el comando ### `npm run api-backend`
+## 4.- Para iniciar el JSON Server, ejecutar el comando `npm run api-backend`
 
 ## 5.- La aplicación tiene un tomeout, por ello es necesario esperar un momento mientras carga la información del JSON. 
 
@@ -28,3 +28,4 @@ Describo las mejoras que podría aplicar, en este caso literalmente fue por tiem
 - Implementar la funcionalidad de agregar a la lista los item seleccionados.
 - Generar el CRUD completo de la aplicación.
 - Tal vez genera una base de datos real para que la aplicación este más completa.
+- Implementar mejores herramientas y técnicas para el diseño responsivo.
