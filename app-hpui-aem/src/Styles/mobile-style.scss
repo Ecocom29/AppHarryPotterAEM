@@ -1,0 +1,48 @@
+@media only screen and (max-width: 420px) {
+    .bodyContent {
+       background-image: url('./../Image/harry-potter-background.jpg');
+         background-repeat:no-repeat;
+        background-position-x:center;
+        background-position-y:center; 
+        margin-top : -8px;
+        font-size: 1.2em;
+       
+    }
+
+    .divImage{ 
+        width : 180px;
+        height:75px;
+    }
+
+    .navSection{
+        width : 240px;
+        font-size : 10px !important;
+        border-end-end-radius: 10px;
+        border-end-start-radius:10px;
+        margin: 0px 42px 55px 0px;  
+        position: relative;   
+
+    }
+
+    .navList{
+        color: rgb(255, 255, 255) !important;
+    }
+
+    .MuiGrid-item {
+        padding-top:25px !important;
+    }
+
+    .divContainer{
+       
+        margin:-30px !important;
+        padding-top: 35px;
+    }
+
+    .MuiModal-root{
+        position: fixed !important; 
+        display: flex !important;
+        width: 180px !important;
+        height: 100px !important;
+        z-index: none !important;
+    }
+  }

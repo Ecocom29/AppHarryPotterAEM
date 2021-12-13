@@ -6,7 +6,7 @@ import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { createTheme } from '@mui/material/styles';
-import { helperHttp } from './../../Helpers/helperHttp';
+import { helperHttp } from '../../Helpers/helperHttp';
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import FormControl from '@mui/material/FormControl';
@@ -212,25 +212,17 @@ function Formulario() {
                         />
                     </Grid>
                 </Grid>
-                {/* <Button
-                    type="submit"
-                    variant="contained"
-                    sx={{ mt: 2, mb: 2 }}
-                >
-                    Guardar
-                </Button> */}
-                <BootstrapButton
-                    type="submit"
-                    variant="contained"
-                    disableRipple>
-
+                <BootstrapButton 
+                    type="submit" 
+                    variant="contained"  
+                    sx={{
+                        m: 3, width: '40ch'
+                    }}
+                    >
                     GUARDAR
                 </BootstrapButton>
             </Box>
-
-
         </Box>
-
     );
 }
 

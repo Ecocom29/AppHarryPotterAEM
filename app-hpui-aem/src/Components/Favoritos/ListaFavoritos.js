@@ -1,18 +1,15 @@
-import React from 'react';
+import React, {useReducer} from 'react';
 import Grid from '@mui/material/Grid';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import StarIcon from '@mui/icons-material/Star';
 import Avatar from '@mui/material/Avatar';
 import Divider from '@mui/material/Divider';
-import Stack from '@mui/material/Stack';
 import DeleteOutline from '@mui/icons-material/DeleteOutline';
 import IconButton from '@mui/material/IconButton';
-import { fontSize } from '@mui/system';
 import Typography from '@mui/material/Typography';
+import { grey } from '@mui/material/colors';
+
 
 const style = {
     width: '100%',
@@ -21,6 +18,8 @@ const style = {
 };
 
 function ListaFavoritos() {
+
+    
 
     const listFavoritos = [
         {
@@ -35,13 +34,14 @@ function ListaFavoritos() {
         }
     ];
 
+   
+
     return (
 
         <Grid sx={{ flexGrow: 1 }} container spacing={2} justifyContent="flex-end">
             <div className="listaFavoritos">
-
                 <List
-                    sx={{ width: 220, maxWidth: 360, height: 150, marginTop: 4 }}
+                    sx={{ width: 250, height: 100, maxWidth: 360,  marginTop: 2 }}
                     component="nav"
                 >
                     {
@@ -50,8 +50,8 @@ function ListaFavoritos() {
                                 <>
                                     <ListItem 
                                         secondaryAction={
-                                            <IconButton edge="end" aria-label="delete">
-                                                <DeleteOutline />
+                                            <IconButton edge="end" aria-label="delete" >
+                                                <DeleteOutline sx= {{ color: grey[100] }}/>
                                             </IconButton>
                                         }>
                                         <Avatar sx={{ width: 25 , height: 25 }} src={item.image} />
@@ -61,7 +61,7 @@ function ListaFavoritos() {
                                                     sx={{ display: 'inline' }}
                                                     component="span"
                                                     variant="body2"
-                                                    color="text.primary"
+                                                    color="white"
                                                 >
                                                     {item.name}
                                                 </Typography>
@@ -75,34 +75,8 @@ function ListaFavoritos() {
                         }))
                     }
                 </List>
-
-                {/* <ListItem disablePadding>
-                                        <Avatar sx={{ width: 30, height: 30 }} src={item.image} />
-                                        <ListItemText primary={item.name} />
-                                        <Divider />
-                                    </ListItem>  */}
-                {/* <List
-                    sx={{ width: 220, maxWidth: 360, height: 150, marginTop: 4 }}
-                    aria-label="contacts"
-                >
-                    <ListItem disablePadding>
-                        <ListItemButton>
-                            <ListItemIcon>
-                                <StarIcon />
-                            </ListItemIcon>
-                            <ListItemText primary="Chelsea Otakan" />
-                        </ListItemButton>
-                    </ListItem>
-                    <ListItem disablePadding>
-                        <ListItemButton>
-                            <ListItemText inset primary="Eric Hoffman" />
-                        </ListItemButton>
-                    </ListItem>
-                </List> */}
-
             </div>
         </Grid>
-
     )
 }
 

@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useReducer } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
@@ -9,37 +10,40 @@ import Grid from '@mui/material/Grid';
 import IconButton from '@mui/material/IconButton';
 import BookmarkBorder from '@mui/icons-material/BookmarkBorder';
 import { Button, Stack } from '@mui/material';
+import { TYPES } from './../Store/actions';
+import { admReducers, initialState } from './../Store/reducer';
 
 function ItemCard({ data }) {
     
     const theme = useTheme();
     const [AddFavorito, setAddFavorito] = useState("");
-   
+    const [state, dispatch] = useReducer(admReducers, initialState);
+    
+    const { listItems, favoritos } = state;
 
-   /*  const AddListaFavoritos = () => {
+    const delItemFavoritos = (id)=>{
         
-        console.log(AddFavorito)
-
-        //const listaFavoritos =
-    } */
-
+    dispatch({type: TYPES.ADD_ITEM_FAVORITE, payload: id })
+       console.log(id)
+    }
+  
     return (
         <>
             {
                 data.map(item => {
                     return (
-                        <Grid item xs={2} sm={4} md={4} key={item.id}>
+                        <Grid item xs={2} sm={4} md={4} key={item.id} sx={ { maxWidth:'xl'}}>
 
                             <Card sx={{ display: 'flex' }} >
                                 <div className="avatarBackground">
                                     <Avatar sx={{ width: 140, height: 140 }} src={item.image} />
                                 </div>
-                                <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+                                <Box sx={{ display: 'block', flexDirection: 'column' ,maxWidth:'xl'  }}>
                                     <Stack direction="row" spacing={12} alignItems="flex-end" mt={1} >
                                         <Typography component="div" variant="subtitle2">
                                             {item.alive ? "VIVO" : "FINADO"} /  {item.species}
                                         </Typography>
-                                        <IconButton color="inherit" key={item} component="span" >
+                                        <IconButton color="inherit" key={item} component="span"  onClick={()=>delItemFavoritos(item.id)}>
                                             <BookmarkBorder />
                                         </IconButton>
                                     </Stack>

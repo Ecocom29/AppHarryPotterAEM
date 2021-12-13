@@ -40,8 +40,8 @@
         "length": ""
       },
       "patronus": "doe",
-      "hogwartsStudent": false,
-      "hogwartsStaff": true,
+      "hogwartsStudent": true,
+      "hogwartsStaff": false,
       "actor": "Alan Rickman",
       "alive": false,
       "image": "http://hp-api.herokuapp.com/images/snape.jpg"
@@ -63,8 +63,8 @@
         "length": 16
       },
       "patronus": "",
-      "hogwartsStudent": false,
-      "hogwartsStaff": true,
+      "hogwartsStudent": true,
+      "hogwartsStaff": false,
       "actor": "Robbie Coltrane",
       "alive": true,
       "image": "http://hp-api.herokuapp.com/images/hagrid.png"
@@ -86,8 +86,8 @@
         "length": 10.25
       },
       "patronus": "wolf",
-      "hogwartsStudent": false,
-      "hogwartsStaff": true,
+      "hogwartsStudent": true,
+      "hogwartsStaff": false,
       "actor": "David Thewlis",
       "alive": false,
       "image": "http://hp-api.herokuapp.com/images/lupin.jpg"

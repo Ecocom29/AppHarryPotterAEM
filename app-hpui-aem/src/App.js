@@ -1,9 +1,9 @@
 //import './index.scss';
-import Content from '../src/Components/Content/Content';
+import Contenido from '../src/Components/Contenido/Contenido';
 
 function App() {
   return (
-   <Content/>
+    <Contenido />
   );
 }
 
