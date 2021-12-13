@@ -36,5 +36,6 @@ Describo las mejoras que podría aplicar, en este caso literalmente fue por tiem
 - Mejorar el diseño responsivo de la aplicación.
 - Implementar la funcionalidad de agregar a la lista los item seleccionados.
 - Generar el CRUD completo de la aplicación.
-- Tal vez genera una base de datos real para que la aplicación este más completa.
+- Tal vez generar una base de datos real para que la aplicación este más completa.
 - Implementar mejores herramientas y técnicas para el diseño responsivo.
+- Implementar un servidor express para consumir la api desde una base de datos
