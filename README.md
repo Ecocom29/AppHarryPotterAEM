@@ -12,8 +12,15 @@
 
 ## 6.- En la aplicación se puede ejecutar los filtros y agregar registros. 
 
+## 7.- Realizar lo siguiente para podeer consumir la api JSON Server en el ambiente local. 
+- Comentar la sección de pruebas y descomentar la sección del helperHttp() del siguiente archivo: AppHarryPotterAEM\src\Components\Contenido\Contenido.js
+- Para el guardado, descomentar la SECCIÓN API del siguiente archivo: AppHarryPotterAEM\src\Components\Formulario\Formulario.js
+- Si es necesario ejecutar de nuevo desde el paso 3.
+
 # Instrucciones para inicializar el proyecto en ambiente publicado
-Para el deploy de la aplicación, se implemento Heroku, debido a que en mi ambiente de desarrollo ya lo tengo preparado para ejecutar los deploy en la herramienta. De igual manera comparto el link de la aplicación:   [https://app-hp-aem.herokuapp.com]
+Para el deploy de la aplicación, se implemento Heroku, debido a que en mi ambiente de desarrollo ya lo tengo preparado para ejecutar los deploy en la herramienta. 
+
+De igual manera comparto el link de la aplicación:   [https://app-hp-aem.herokuapp.com]
 
 ##  ¿Qué es lo que más te gustó de tu desarrollo?
 
