@@ -12,6 +12,9 @@
 
 ## 6.- En la aplicación se puede ejecutar los filtros y agregar registros. 
 
+# Instrucciones para inicializar el proyecto en ambiente publicado
+Para el deploy de la aplicación, se implemento Heroku, debido a que en mi ambiente de desarrollo ya lo tengo preparado para ejecutar los deploy en la herramienta. De igual manera comparto el link de la aplicación:   [https://app-hp-aem.herokuapp.com]
+
 ##  ¿Qué es lo que más te gustó de tu desarrollo?
 
 Me gusto el haber realizado este pequeño proyecto, ya que con ello puedo saber que nivel de conocimientos tengo hasta el momento, estuvo muy entretenido y fue un reto el haber implementado la aplicación.
