@@ -24,7 +24,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "api-backend": "json-server --watch src/Api/db.json --port 5000"
+    "api-backend": "json-server --watch src/Api/db.json --port 8080",
+    "heroku-postbuild": "json-server --watch src/Api/db.json --port 8080"
   },
   "eslintConfig": {
     "extends": [
