@@ -20,8 +20,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start json-server --watch src/Api/db.json --port 8080",
-    "build": "react-scripts build set NODE_ENV=production&& json-server --watch src/Api/db.json",
+    "start": "react-scripts start",
+    "build": "react-scripts build json-server --watch src/Api/db.json --port ${process.env.PORT || 5000}",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "api-backend": "json-server --watch src/Api/db.json --port 8080"
